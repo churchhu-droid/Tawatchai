@@ -1,0 +1,6 @@
+{
+  "name": "Prof. Dr. Thawatchai Phaechamud - Pharmacy SU & Formulation Research Portal",
+  "description": "เว็บไซต์แนะนำอาจารย์ ศ. ดร. ภก.ธวัชชัย แพชมัด คณะเภสัชศาสตร์ มหาวิทยาลัยศิลปากร ผลงานวิจัยทางเภสัชกรรมอุตสาหการ และระบบคำนวณงบประมาณสารเคมี อุปกรณ์ประเมินตำรับยา และค่าเบี้ยเลี้ยงวิจัย",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
