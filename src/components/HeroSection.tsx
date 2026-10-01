@@ -2,8 +2,8 @@ import React from 'react';
 import { Mail, MapPin, ExternalLink, Calculator, BookOpen, Microscope, Sparkles } from 'lucide-react';
 import { PROFESSOR_PROFILE } from '../data/professorData';
 
-// Timestamped asset generated via generate_image tool
-import profPortrait from '../assets/images/prof_thawatchai_portrait_1790837944167.jpg';
+// Official faculty portrait of Prof. Dr. Thawatchai Phaechamud (Silpakorn Pharmacy)
+import profPortrait from '../assets/images/thawatchai_official_portrait.png';
 import labHeroBg from '../assets/images/pharmaceutical_lab_hero_1790837958241.jpg';
 
 interface HeroSectionProps {
@@ -118,20 +118,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToSection, onO
 
           {/* Right Column: Professor Portrait & Official Card (5 cols) */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-sm sm:max-w-md bg-white rounded-2xl p-3 border border-slate-200 shadow-md">
-              <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-slate-100">
+            <div className="relative w-full max-w-sm sm:max-w-md bg-white rounded-2xl p-3.5 border border-slate-200 shadow-md">
+              <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-gradient-to-b from-slate-50 to-emerald-50/40 flex items-center justify-center">
                 <img
                   src={profPortrait}
-                  alt="ศาสตราจารย์ ดร. ภก.ธวัชชัย แพชมัด"
-                  className="w-full h-full object-cover object-top"
+                  alt="ศาสตราจารย์ ดร. ภก.ธวัชชัย แพชมัด คณะเภสัชศาสตร์ มหาวิทยาลัยศิลปากร"
+                  className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
                 
-                {/* Bottom caption overlay */}
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <p className="text-xs font-mono text-emerald-200 uppercase tracking-wider">Faculty of Pharmacy, Silpakorn University</p>
-                  <p className="text-sm font-semibold">ศ. ดร. ภก.ธวัชชัย แพชมัด</p>
+                {/* Subtle bottom caption overlay */}
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/75 via-slate-900/30 to-transparent p-3.5 pt-8 text-white pointer-events-none">
+                  <p className="text-[11px] font-mono text-emerald-300 uppercase tracking-wider font-semibold">Faculty of Pharmacy · Silpakorn University</p>
+                  <p className="text-sm font-bold text-white leading-tight">ศ. ดร. ภก.ธวัชชัย แพชมัด</p>
                 </div>
               </div>
 
